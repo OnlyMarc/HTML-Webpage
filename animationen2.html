@@ -21,5 +21,45 @@
 	</ul>
 
   <h2 class="animated lightSpeedIn delay-05s">Text-Animationen</h2>
+  <h3>CSS-Dokument</h3> 
+  <p style="text-align: left; margin-left: 400px; margin-top: 50px">
+      @keyframes lightSpeedIn { <br>
+        from {<br>
+          -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);<br>
+          transform: translate3d(100%, 0, 0) skewX(-30deg);<br>
+          opacity: 0;<br>
+        }<br>
+        <br>
+        60% {<br>
+          -webkit-transform: skewX(20deg);<br>
+          transform: skewX(20deg);<br>
+          opacity: 1;<br>
+        }<br>
+        <br>
+        80% {<br>
+          -webkit-transform: skewX(-5deg);<br>
+          transform: skewX(-5deg);<br>
+        }<br>
+        <br>
+        to {<br>
+          -webkit-transform: translate3d(0, 0, 0);<br>
+          transform: translate3d(0, 0, 0);<br>
+        }<br>
+      }<br>
+      <br>
+      .lightSpeedIn {<br>
+        -webkit-animation-name: lightSpeedIn;<br>
+        animation-name: lightSpeedIn;<br>
+        -webkit-animation-timing-function: ease-out;<br>
+        animation-timing-function: ease-out;<br>
+      }<br>
+  </p>
+
+  <h3>HTML-Dokument</h3>
+  <p style="text-align: left; margin-left: 400px; margin-top: 50px">
+
+      p class="animated lightSpeedIn delay-1s" Text p
+  
+    </p>
 </body>
 </html>

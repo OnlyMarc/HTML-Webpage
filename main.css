@@ -6,10 +6,13 @@ h1,h2,h3,h4,p,a {font-family: 'Nova Round', cursive;}
 
 
 
-body {background-color: darkgrey;
-        margin:0;
-        text-align: center;
-
+body {
+  background: linear-gradient(90deg, #303030, #404040, #303030);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  margin: 0; 
+  text-align: center;
+  height: 100%;
 }
 
 .itemlist {
@@ -165,4 +168,16 @@ li a:hover {
 .animated.delay-05s {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+}
+
+@keyframes Gradient {
+  0% {
+      background-position: 0% 50%
+  }
+  50% {
+      background-position: 100% 50%
+  }
+  100% {
+      background-position: 0% 50%
+  }
 }
