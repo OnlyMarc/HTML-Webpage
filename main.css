@@ -94,6 +94,6 @@ li a:hover {
 }
 
 .animated.delay-05s {
-  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
+
