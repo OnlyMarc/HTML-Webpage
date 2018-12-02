@@ -6,6 +6,8 @@ h1,p,a {font-family: 'Nova Round', cursive;}
 
 body {background-color: darkgrey;
         margin:0;
+        text-align: center;
+
 }
 
 .itemlist {
@@ -32,11 +34,11 @@ body {background-color: darkgrey;
 }
 
 @keyframes blockmoving {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:orange; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:purple; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+    0%   {background-color:red; left:-100px; top:0px;}
+    25%  {background-color:orange; left:100px; top:0px;}
+    50%  {background-color:blue; left:100px; top:200px;}
+    75%  {background-color:purple; left:-100px; top:200px;}
+    100% {background-color:red; left:-100px; top:0px;}
 }
 
 @keyframes lightSpeedIn {
@@ -90,7 +92,11 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+}
+
+.animated.delay-05s {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
