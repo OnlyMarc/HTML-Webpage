@@ -2,7 +2,7 @@
     font-family: NovaRound;
     src: url(https://fonts.google.com/?query=nova+r&selection.family=Nova+Round);
 }
-h1,p,a {font-family: 'Nova Round', cursive;}
+h1,h2,h3,h4,p,a {font-family: 'Nova Round', cursive;}
 
 body {background-color: darkgrey;
         margin:0;
@@ -17,9 +17,6 @@ body {background-color: darkgrey;
     align-items: center;
 }
 
-.text {
-
-}
 
 .animation {
     margin: 0px 300px 300px 70px;
