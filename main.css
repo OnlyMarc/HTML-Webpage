@@ -2,21 +2,101 @@
     font-family: NovaRound;
     src: url(https://fonts.google.com/?query=nova+r&selection.family=Nova+Round);
 }
-p {font-family: 'Nova Round', cursive;}
-body {background-color: darkgrey;}
+h1,p,a {font-family: 'Nova Round', cursive;}
 
-div {
+body {background-color: darkgrey;
+        margin:0;
+        text-align: center;
+
+}
+
+.itemlist {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text {
+
+}
+
+.animation {
+    margin: 0px 300px 300px 70px;
+}
+
+.animation1 {
     width: 100px;
     height: 100px;
     background-color: red;
     position: relative;
-    animation: example 5s ease infinite;
+    animation: blockmoving 5s ease infinite;
 }
 
-@keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:orange; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:purple; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+@keyframes blockmoving {
+    0%   {background-color:red; left:-100px; top:0px;}
+    25%  {background-color:orange; left:100px; top:0px;}
+    50%  {background-color:blue; left:100px; top:200px;}
+    75%  {background-color:purple; left:-100px; top:200px;}
+    100% {background-color:red; left:-100px; top:0px;}
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.animated.delay-05s {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
