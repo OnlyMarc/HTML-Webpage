@@ -22,5 +22,33 @@
 	<div style="display: flex; justify-content: center; width: 100%">
  		<div style="margin: 5px;" class="animation1"></div>
 	</div>
+
+	<h3 style="margin-top: 250px">CSS-Dokument</h3>
+
+	<p style="text-align: left; margin-left: 400px; margin-top: 50px">
+		.animation1 { <br>
+			width: 100px;<br>
+			height: 100px;<br>
+			background-color: red;<br>
+			position: relative;<br>
+			animation: blockmoving 5s ease infinite;<br>
+		}<br>
+		<br>
+		@keyframes blockmoving {<br>
+			0%   {background-color:red; left:-100px; top:0px;}<br>
+			25%  {background-color:orange; left:100px; top:0px;}<br>
+			50%  {background-color:blue; left:100px; top:200px;}<br>
+			75%  {background-color:purple; left:-100px; top:200px;}<br>
+			100% {background-color:red; left:-100px; top:0px;}<br>
+		}<br>
+	</p>
+
+	<h3>HTML-Dokument</h3>
+
+	<span><p style="text-align: left; margin-left: 400px; margin-top: 50px"></span>
+	
+		<span><</span>div style="margin: 5px;" class="animation1"><span><</span>/div>
+	
+	</p>
 </body>
 </html>
