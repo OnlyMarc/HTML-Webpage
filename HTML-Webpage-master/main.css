@@ -1,0 +1,130 @@
+@font-face {
+    font-family: NovaRound;
+    src: url(https://fonts.google.com/?query=nova+r&selection.family=Nova+Round);
+}
+h1,h2,h3,h4,p,a {font-family: 'Nova Round', cursive;}
+
+
+
+body {
+  margin: 0; 
+  text-align: center;
+  height: 100%;
+}
+
+.content {
+  background: linear-gradient(-45deg, #303030, #404040, #303030);
+  background-size: 400% 1000%;
+  animation: Gradient 15s ease infinite;
+  height: 100vh;
+  min-height: 100%;
+}
+
+.itemlist {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.animation {
+    margin: 0px 300px 300px 70px;
+}
+
+.animation1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: blockmoving 5s ease infinite;
+}
+
+@keyframes blockmoving {
+    0%   {background-color:red; left:-100px; top:0px;}
+    25%  {background-color:orange; left:100px; top:0px;}
+    50%  {background-color:blue; left:100px; top:200px;}
+    75%  {background-color:purple; left:-100px; top:200px;}
+    100% {background-color:red; left:-100px; top:0px;}
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.animated.delay-05s {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+@keyframes Gradient {
+  0% {
+      background-position: 0% 50%
+  }
+  50% {
+      background-position: 100% 50%
+  }
+  100% {
+      background-position: 0% 50%
+  }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a:hover {
+    color: black;
+}
