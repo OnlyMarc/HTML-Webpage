@@ -10,13 +10,15 @@ body {
   margin: 0; 
   text-align: center;
   height: 100%;
+  max-height: 100%;
 }
+
 
 .content {
   background: linear-gradient(-45deg, #303030, #404040, #303030);
   background-size: 400% 1000%;
   animation: Gradient 15s ease infinite;
-  height: 100vh;
+  height: 100%;
   min-height: 100%;
 }
 
